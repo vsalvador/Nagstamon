@@ -429,7 +429,7 @@ jobs:
       - run: cd artifact && sha256sum *agstamon* > sha256sums.txt
       # finally some maintained solution for creating releases
       # https://github.com/marketplace/actions/create-release
-      - uses: ncipollo/release-action@v1
+      - uses: ncipollo/release-action@v1.21.0
         with:
           allowUpdates: true
           makeLatest: true
